@@ -21,9 +21,7 @@ node(){
 
         stage('SonarQube Analysis'){
             withSonarQubeEnv(credentialsId: 'newtoken') {
-    // some block
-}
-                sh "${sonarScanner}/bin/sonar-scanner"
+              sh "${sonarScanner}/bin/sonar-scanner"
 
 }
         }
