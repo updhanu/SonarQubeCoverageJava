@@ -1,7 +1,7 @@
 node(){
 
     def mvnHome = tool 'MavenBuildTool'
-    def sonarScanner = tool name: 'NewSonar', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+    def sonarScanner = tool name: 'Sonar1', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
 
  
 
@@ -20,7 +20,7 @@ node(){
         }
 
         stage('SonarQube Analysis'){
-            withSonarQubeEnv(credentialsId: 'newtoken') {
+            withSonarQubeEnv(credentialsId: 'df749387-8dae-459f-bbad-1e18e2e72b7e', installationName: 'Sonar1') {
               sh "${sonarScanner}/bin/sonar-scanner"
 
 }
