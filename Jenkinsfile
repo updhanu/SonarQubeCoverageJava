@@ -1,7 +1,7 @@
 node(){
 
     def mvnHome = tool 'MavenBuildTool'
-    def sonarScanner = tool name: 'Sonar1', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+    def sonarScanner = tool name: 'newtoken', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
 
  
 
