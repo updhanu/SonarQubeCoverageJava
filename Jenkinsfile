@@ -20,7 +20,7 @@ node(){
         }
 
         stage('SonarQube Analysis'){
-            withSonarQubeEnv(credentialsId: 'df749387-8dae-459f-bbad-1e18e2e72b7e', installationName: 'Sonar1') {
+           withSonarQubeEnv(credentialsId: '91cafba8-7a8a-425c-9a4b-b7f25aab17bc', installationName: 'newtoken') {
               sh "${sonarScanner}/bin/sonar-scanner"
 
 }
